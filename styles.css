@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* Set font styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Adjust label styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    width: 200px;
+    margin-left: 470px;
+}
+
+/* Style select elements */
+select {
+    padding: 5px;
+    width: 200px;
+    margin-left: 470px;
+}
+
+/* Adjust input text styles */
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    margin-left: 470px;
+}
+
+/* Style the Calculate button */
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 470px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Style the video container */
+#videoContainer {
+    margin-top: 20px;
+}
+
+/* Style the video player */
+#videoPlayer {
+    width: 100%;
+    height: auto;
+}
+
+/* Hide the video container by default */
+#videoContainer {
+    display: none;
+}
+
+#institution option[value="IUT"] {
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}

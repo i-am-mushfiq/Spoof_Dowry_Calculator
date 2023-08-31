@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dowry Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Dowry Calculator</h1>
+
+    <label for="institution">Occupation:</label>
+    <select id="institution">
+        <option value="BUET">Engineer</option>
+        <option value="RUET">Doctor</option>
+        <option value="CUET">Coorporate</option>
+        <option value="IUT">Government Job</option>
+    </select>
+
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="text" id="age">
+
+    <br><br>
+
+    <label for="salary">Current Salary:</label>
+    <input type="text" id="salary">
+
+    <br><br>
+
+    <label for="family">Family Members:</label>
+    <select id="family">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <!-- Add more family member options here -->
+    </select>
+
+    <br><br>
+
+    <label for="location">Current Location:</label>
+    <select id="location">
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chittagong">Chittagong</option>
+        <option value="Rajshahi">Rajshahi</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Canada">Canada</option>
+        <!-- Add more location options here -->
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateSalary()">Calculate</button>
+
+    <br><br>
+
+    <div id="videoContainer" style="display: none;">
+        <video id="videoPlayer" width="640" height="360" controls>
+            <source src="Joutuk Bondho.mp4" type="video/mp4">
+            <!-- Add more source formats if necessary -->
+        </video>
+    </div>
+
+    <script>
+        function calculateSalary() {
+            // Show the video container
+            document.getElementById("videoContainer").style.display = "block";
+
+            // Play the video
+            var videoPlayer = document.getElementById("videoPlayer");
+            videoPlayer.play();
+
+            // You can also dynamically change the video source based on the calculated salary or other parameters
+            // videoPlayer.src = "path/to/your/video.mp4";
+
+            // Scroll to the video container for better visibility
+            document.getElementById("videoContainer").scrollIntoView();
+        }
+    </script>
+</body>
+</html>
